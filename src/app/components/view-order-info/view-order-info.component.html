@@ -1,0 +1,72 @@
+<!-- <input type="text" name #myid>
+  <button (click)="getOrderById(myid.value)">getOrder by id</button>  -->
+<div>
+  <input type="text"  placeholder="Enter Order No" #myid><br><br>
+   <button class="btn btn-primary" (click)="getOrderById(myid.value)">Get Order Details</button> 
+  </div>
+<div *ngIf="order"> 
+    <p>Order #{{ order.id}}</p>
+    <p>Contact Name: {{ order.contactName }}</p> 
+    <p>Order Date: {{ order.orderDate  }}
+      
+    <!-- <p>{{order|json}}</p>
+    <p>{{order.orderNo}}</p>
+    <table class="table m-2 md-4 table-bordered table-hover table-responsive">
+      <thead class="thead-dark">
+        <tr  class=" justify-content-center">
+          <th>Item No</th>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of selectedOrderItems">
+          <td>{{item.itemNo}}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>${{ item.price }}</td>
+        </tr> 
+        <tr>
+      </tbody>
+    </table>
+    <a routerLink="/orders">Back to Orders</a>
+    
+  </div> -->
+  <!-- <div class="row row-cols-1 row-cols-md-3 g-9">
+    <div *ngFor = "let item of selectedOrderItems" class="col" >
+        <div class="card" id="box" >
+            <img src='../assets/food3.webp' class="card-img-top" alt="..." id="pup">
+            <div class="card-body">
+               <h5 class="card-title">{{items.title}}</h5> -->
+              <!-- <p class="card-text">item No: {{item.itemNo}}</p>
+              <p class="card-text">Name: {{item.name}}</p>
+              <p class="card-text">Quantity: {{item.quantity}}</p>
+              <p class="card-text">Price: {{item.price}}</p> -->
+             <!-- <button (click)="delete(items.id)" class="m-2 btn btn-danger justify-content-end">Delete</button>
+              <button (click)="update(items); updateClick()" class="m-2 btn btn-warning justify-content-end">Update</button> -->
+              <!-- <a routerLink="/orders">Back to Orders</a>
+            </div>
+          </div>
+    </div>
+  </div>  -->
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-6">
+        <div *ngFor = "let item of selectedOrderItems" class="col">
+          <div class="card">
+            <img src="../assets/food3.webp" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Info</h5>
+              <p class="card-text">item No: {{item.itemNo}}</p>
+              <p class="card-text">Name: {{item.name}}</p>
+              <p class="card-text">Quantity: {{item.quantity}}</p>
+              <p class="card-text">Price: {{item.price}}</p>
+              <a routerLink="/orders">Back to Orders</a>
+            </div>
+          </div>
+        </div>
+
+  
+
+  

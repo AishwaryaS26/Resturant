@@ -1,0 +1,60 @@
+
+ <!-- <h2>Order Details</h2> -->
+<table class="table m-2 md-4 table-bordered table-hover table-responsive bg-dark text-light">
+    <thead class="thead-dark">Order Details
+       <tr class=" justify-content-center">
+            <th>Order No</th>
+            <th>Contact Name</th>
+            <th>Order Date</th>
+            <th>Items Ordered</th>
+            <th>Order Total</th>
+            <th>Tax Total</th>
+            <th>Grand Total</th>
+        </tr>
+    </thead>
+    <tbody class="text-align-center">
+        <tr *ngFor="let order of orders" class="justify-content-end">
+            <td>{{ order.id }}</td>
+            <td>{{ order.contactName }}</td>
+            <td>{{ order.orderDate }}</td>
+            <td>
+            <div *ngFor="let x of order.itemsOrdered">
+                {{x.itemNo}}&nbsp;
+                {{ x.name}}&nbsp;
+                {{x.price}}&nbsp;
+                {{x.quantity}}&nbsp;
+            </div>
+            </td>
+            <td>{{ order.orderTotal }}</td>
+            <td>{{ order.taxTotal }}</td>
+            <td>{{ order.grandTotal }}</td>
+        </tr>
+    </tbody>
+</table><br><br>
+
+<button class="btn btn-primary" (click)="viewOrder()">View Order Details</button>  
+
+<!-- <div class="container">
+    <div class="row row-cols-3 row-cols-md-1 g-9">
+        <div class="card">
+            <div class="card-body">
+        <div *ngFor="let order of orders" class="justify-content-end">
+            <p>{{ order.id }}</p>
+            <p>{{ order.contactName }}</p>
+            <p>{{ order.orderDate }}</p>
+       
+        <div *ngFor = "let item of order.itemsOrdered" class="col">
+              <p class="card-text">item No: {{item.itemNo}}</p>
+              <p class="card-text">Name: {{item.name}}</p>
+              <p class="card-text">Quantity: {{item.quantity}}</p>
+              <p class="card-text">Price: {{item.price}}</p>
+              <a routerLink="/orders">Back to Orders</a>
+            </div>
+            <p>{{ order.orderTotal }}</p>
+            <p>{{ order.taxTotal }}</p>
+            <p>{{ order.grandTotal }}</p>
+          </div>
+        </div>
+        </div> -->
+
+

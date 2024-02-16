@@ -1,0 +1,85 @@
+{
+    "orders": [
+      {
+        "id": "ORD001",
+        "contactName": "John Doe",
+        "orderDate": "2024-01-15",
+        "itemsOrdered": [
+          {
+            "image-url": "../assets/food2.jpg",
+            "itemNo": "ITM001",
+            "name": "Product A",
+            "quantity": 2,
+            "price": 10,
+            "itemValue": 20
+          },
+          {
+            "itemNo": "ITM002",
+            "name": "Product B",
+            "quantity": 1,
+            "price": 15,
+            "itemValue": 15
+          }
+        ],
+        "orderTotal": 35,
+        "taxTotal": 5,
+        "grandTotal": 40
+      },
+      {
+        "id": "ORD002",
+        "contactName": "Jane Smith",
+        "orderDate": "2024-01-16",
+        "itemsOrdered": [
+          {
+            "itemNo": "ITM003",
+            "name": "Product C",
+            "quantity": 3,
+            "price": 8,
+            "itemValue": 24
+          }
+        ],
+        "orderTotal": 24,
+        "taxTotal": 3,
+        "grandTotal": 27
+      },
+      {
+        "id": "ORD003",
+        "contactName": "Jhimmy",
+        "orderDate": "2024-01-17",
+        "itemsOrdered": [
+          {
+            "itemNo": "ITM004",
+            "name": "Product D",
+            "quantity": 1,
+            "price": 30,
+            "itemValue": 50
+          }
+        ],
+        "orderTotal": 1,
+        "taxTotal": 3,
+        "grandTotal": 37
+      },
+      {
+        "id": "ORD004",
+        "contactName": "Wilson",
+        "orderDate": "2023-10-17",
+        "itemsOrdered": [
+          {
+            "itemNo": "ITM005",
+            "name": "Product E",
+            "quantity": 2,
+            "price": 70,
+            "itemValue": 100
+          }
+        ],
+        "orderTotal": 2,
+        "taxTotal": 3,
+        "grandTotal": 140
+      }
+      
+      
+    ]
+   
+  }
+ 
+  
