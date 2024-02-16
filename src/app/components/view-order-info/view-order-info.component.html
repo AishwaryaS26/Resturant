@@ -1,0 +1,35 @@
+<div *ngIf="order">
+    <!-- <h2>Order #{{ order.orderNo }}</h2>
+    <p>Contact Name: {{ order.contactName }}</p> -->
+    <!-- <p>Order Date: {{ order.orderDate  }}</p> -->
+    <!-- <p>{{order|json}}</p>
+    <p>{{order.orderNo}}</p> -->
+    <table class="table m-2 md-4 table-bordered table-hover table-responsive">
+      <thead class="thead-dark">
+        
+        <tr  class=" justify-content-center">
+        
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Item Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.name }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>${{ item.price }}</td>
+          <!-- <td>${{ item.quantity * item.price }}</td> -->
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+    <a routerLink="/orders">Back to Orders</a>
+<!-- <button (click)="getOrderById()">getOrder by id</button> -->
+  </div>
+
+
+  
+
+  

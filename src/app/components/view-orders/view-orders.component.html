@@ -1,0 +1,36 @@
+<table class="table m-2 md-4 table-bordered table-hover table-responsive">
+    <thead class="thead-dark">
+        <h2>Order Details</h2>
+        <tr class=" justify-content-center">
+            <th>Order No</th>
+            <th>Contact Name</th>
+            <th>Order Date</th>
+            <th>Items Ordered</th>
+            <th>Order Total</th>
+            <th>Tax Total</th>
+            <th>Grand Total</th>
+        </tr>
+    </thead>
+    <tbody class="text-align-center">
+        <tr *ngFor="let order of orders" class="justify-content-end">
+            <td>{{ order.orderNo }}</td>
+            <td>{{ order.contactName }}</td>
+            <td>{{ order.orderDate }}</td>
+            <td>
+            <div *ngFor="let x of order.itemsOrdered">
+                {{x.itemNo}}&nbsp;
+                {{ x.name}}&nbsp;
+                {{x.price}}&nbsp;
+                {{x.quantity}}&nbsp;
+            </div>
+            </td>
+            <td>{{ order.orderTotal }}</td>
+            <td>{{ order.taxTotal }}</td>
+            <td>{{ order.grandTotal }}</td>
+            <!-- <td><a routerLink="/orders/{{ order.orderNo }}">View Details</a></td> -->
+        </tr>
+    </tbody>
+</table><br><br>
+<!-- <button (click)="hi()">click</button> -->
+
+<button (click)="viewOrder()">Get Order Details</button>

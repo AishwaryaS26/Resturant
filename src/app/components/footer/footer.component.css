@@ -1,0 +1,13 @@
+p{
+    height: 100px;
+    width:100%;
+    background-color:rgb(156, 185, 229);
+    text-align: center;
+    font-size: larger;
+    color: beige;
+    padding:5px;
+    bottom: 0;
+    position: fixed;
+    
+}
+

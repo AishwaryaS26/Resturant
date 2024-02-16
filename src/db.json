@@ -1,0 +1,48 @@
+{
+    "orders": [
+      {
+        "id": "ORD001",
+        "contactName": "John Doe",
+        "orderDate": "2024-01-15",
+        "itemsOrdered": [
+          {
+            "itemNo": "ITM001",
+            "name": "Product A",
+            "quantity": 2,
+            "price": 10,
+            "itemValue": 20
+          },
+          {
+            "itemNo": "ITM002",
+            "name": "Product B",
+            "quantity": 1,
+            "price": 15,
+            "itemValue": 15
+          }
+        ],
+        "orderTotal": 35,
+        "taxTotal": 5,
+        "grandTotal": 40
+      },
+      {
+        "id": "ORD002",
+        "contactName": "Jane Smith",
+        "orderDate": "2024-01-16",
+        "itemsOrdered": [
+          {
+            "itemNo": "ITM003",
+            "name": "Product C",
+            "quantity": 3,
+            "price": 8,
+            "itemValue": 24
+          }
+        ],
+        "orderTotal": 24,
+        "taxTotal": 3,
+        "grandTotal": 27
+      }
+      
+    ]
+  }
+ 
+  
