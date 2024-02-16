@@ -1,7 +1,7 @@
 <!-- <input type="text" name #myid>
   <button (click)="getOrderById(myid.value)">getOrder by id</button>  -->
-<div>
-  <input type="text"  placeholder="Enter Order No" #myid><br><br>
+<div >
+  <input type="text "  placeholder="Enter Order No" #myid><br><br>
    <button class="btn btn-primary" (click)="getOrderById(myid.value)">Get Order Details</button> 
   </div>
 <div *ngIf="order"> 
@@ -54,7 +54,7 @@
   <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-6">
         <div *ngFor = "let item of selectedOrderItems" class="col">
-          <div class="card">
+          <div class="card bg-dark text-light">
             <img src="../assets/food3.webp" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Info</h5>

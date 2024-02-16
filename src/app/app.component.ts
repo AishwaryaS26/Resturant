@@ -10,7 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,RouterLink,CommonModule,FooterComponent,ViewOrdersComponent,HomeComponent,ViewOrderInfoComponent],
+  imports: [RouterOutlet,HeaderComponent,RouterLink,CommonModule,FooterComponent,
+    ViewOrdersComponent,HomeComponent,ViewOrderInfoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

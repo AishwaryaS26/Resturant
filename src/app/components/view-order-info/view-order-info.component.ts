@@ -43,8 +43,5 @@ fetchOrders(order:Order): void {
    console.log(x)
    this.selectedOrderItems=order.itemsOrdered
 }
-get()
-{
 
-}
 }
